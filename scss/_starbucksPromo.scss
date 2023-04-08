@@ -1,0 +1,10 @@
+.sticky_promo {
+  color: $babyGreen;
+  background-color: $darkgreen;
+  position: sticky;
+  height: 2rem;
+  top: 0;
+  h5 {
+    margin: 0;
+  }
+}

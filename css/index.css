@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  background-color: #f3f1e7;
+  height: 5rem;
+}
+nav a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.sticky_promo {
+  color: #d4e9e2;
+  background-color: #1e3932;
+  position: sticky;
+  height: 2rem;
+  top: 0;
+}
+.sticky_promo h5 {
+  margin: 0;
+}
+
+.hero {
+  height: 90vh;
+  background-size: contain;
+  background-color: #d4e9e2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 1 1 auto;
+}
+.hero img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hero .basic_info {
+  max-width: fit-content;
+  align-self: center;
+}
+.hero .basic_info p {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+.hero .basic_info button {
+  background-color: #008248;
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.hero .basic_info button:hover {
+  opacity: 0.9;
+}
+.hero .basic_info h4 {
+  margin-top: 2em;
+}
+.hero .basic_info h4 a {
+  color: #000000;
+}
+
+.getting_started {
+  margin-top: 4rem;
+}
+.getting_started .tumbnail_title {
+  text-align: center;
+}
+.getting_started .multi_thumbnail {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 2rem;
+}
+.getting_started .multi_thumbnail .tumb_container {
+  width: 20%;
+  text-align: center;
+}
+.getting_started .multi_thumbnail .tumb_container h2 {
+  border: 1px solid #000000;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.slider_section .slider_intro {
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #d4e9e2;
+}
+.slider_section .slider_intro h2 {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+.slider_section .slider_intro .slider_buttons {
+  display: flex;
+  justify-content: center;
+  height: 3em;
+}
+.slider_section .slider_intro .slider_buttons button {
+  font-size: 1.5em;
+  background-color: transparent;
+  border: none;
+  height: 90%;
+  box-sizing: content-box;
+  font-weight: bold;
+  cursor: pointer;
+}
+.slider_section .slider_intro .slider_buttons button:hover {
+  border-bottom: 3px solid #1e3932;
+}
+.slider_section .slider_intro .slider_buttons .active_btn {
+  border-bottom: 3px solid #1e3932;
+}
+.slider_section .slider {
+  height: 250px;
+}
+.slider_section .slider .slider_item {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider_section .slider .slider_item .slide_info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.slider_section .slider .slider_item img {
+  height: 211px;
+  width: 375px;
+}
+.slider_section .slider .slider_active {
+  visibility: visible;
+}

@@ -1,0 +1,59 @@
+.slider_section {
+  .slider_intro {
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: $babyGreen;
+    h2 {
+      text-align: center;
+      vertical-align: middle;
+      margin: 0;
+    }
+    .slider_buttons {
+      display: flex;
+      justify-content: center;
+
+      height: 3em;
+      button {
+        font-size: 1.5em;
+        background-color: transparent;
+        border: none;
+        height: 90%;
+        box-sizing: content-box;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      button:hover {
+        border-bottom: 3px solid $darkgreen;
+      }
+      .active_btn {
+        border-bottom: 3px solid $darkgreen;
+      }
+    }
+  }
+  .slider {
+    height: 250px;
+    .slider_item {
+      position: absolute;
+      width: 100%;
+      height: 250px;
+      visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .slide_info {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+      }
+      img {
+        height: 211px;
+        width: 375px;
+      }
+    }
+    .slider_active {
+      visibility: visible;
+    }
+  }
+}
