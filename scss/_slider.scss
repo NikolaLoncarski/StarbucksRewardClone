@@ -13,9 +13,9 @@
     .slider_buttons {
       display: flex;
       justify-content: center;
-
+      flex-direction: row;
       height: 3em;
-      button {
+      .slider_btn {
         font-size: 1.5em;
         background-color: transparent;
         border: none;
@@ -24,21 +24,30 @@
         font-weight: bold;
         cursor: pointer;
       }
-      button:hover {
+      .slider_btn:hover {
         border-bottom: 3px solid $darkgreen;
       }
       .active_btn {
         border-bottom: 3px solid $darkgreen;
       }
+      .slider_btn::after {
+        content: "";
+        display: inline-block;
+        background-image: url(../assets/images/slider/star8.png);
+        background-size: contain;
+        height: 15px;
+        width: 15px;
+      }
     }
   }
   .slider {
+    background-color: $babyGreen;
     height: 250px;
     .slider_item {
       position: absolute;
       width: 100%;
       height: 250px;
-      visibility: hidden;
+      opacity: 0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -53,7 +62,8 @@
       }
     }
     .slider_active {
-      visibility: visible;
+      opacity: 1;
+      transition: all 1s;
     }
   }
 }

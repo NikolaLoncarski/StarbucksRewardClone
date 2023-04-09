@@ -106,9 +106,10 @@ nav a {
 .slider_section .slider_intro .slider_buttons {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   height: 3em;
 }
-.slider_section .slider_intro .slider_buttons button {
+.slider_section .slider_intro .slider_buttons .slider_btn {
   font-size: 1.5em;
   background-color: transparent;
   border: none;
@@ -117,20 +118,29 @@ nav a {
   font-weight: bold;
   cursor: pointer;
 }
-.slider_section .slider_intro .slider_buttons button:hover {
+.slider_section .slider_intro .slider_buttons .slider_btn:hover {
   border-bottom: 3px solid #1e3932;
 }
 .slider_section .slider_intro .slider_buttons .active_btn {
   border-bottom: 3px solid #1e3932;
 }
+.slider_section .slider_intro .slider_buttons .slider_btn::after {
+  content: "";
+  display: inline-block;
+  background-image: url(../assets/images/slider/star8.png);
+  background-size: contain;
+  height: 15px;
+  width: 15px;
+}
 .slider_section .slider {
+  background-color: #d4e9e2;
   height: 250px;
 }
 .slider_section .slider .slider_item {
   position: absolute;
   width: 100%;
   height: 250px;
-  visibility: hidden;
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,5 +155,51 @@ nav a {
   width: 375px;
 }
 .slider_section .slider .slider_active {
-  visibility: visible;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.learn_more {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: auto;
+  box-sizing: content-box;
+  justify-content: center;
+}
+.learn_more .extras {
+  width: 40%;
+  height: fit-content;
+  align-self: center;
+}
+.learn_more .extras h2 {
+  text-align: center;
+}
+.learn_more .multi_thumbnail {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-between;
+}
+.learn_more .multi_thumbnail .thumb_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  justify-content: space-between;
+}
+.learn_more .multi_thumbnail .thumb_item img {
+  height: 112px;
+  width: 112px;
+}
+.learn_more .multi_thumbnail .thumb_item button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #1e3932;
+  font-size: 1rem;
+}
+.learn_more .multi_thumbnail .thumb_item button:hover {
+  text-decoration: none;
 }

@@ -1,0 +1,46 @@
+.learn_more {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 90%;
+  margin: auto;
+  box-sizing: content-box;
+  justify-content: center;
+
+  .extras {
+    width: 40%;
+    height: fit-content;
+    align-self: center;
+    h2 {
+      text-align: center;
+    }
+  }
+  .multi_thumbnail {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+    .thumb_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      justify-content: space-between;
+      img {
+        height: 112px;
+        width: 112px;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        text-decoration: underline;
+        color: $darkgreen;
+        font-size: 1rem;
+      }
+      button:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
