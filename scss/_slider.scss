@@ -57,8 +57,10 @@
         width: 30%;
       }
       img {
-        height: 211px;
-        width: 375px;
+        object-fit: contain;
+        height: 200px;
+        width: 250px;
+        flex-shrink: 1;
       }
     }
     .slider_active {

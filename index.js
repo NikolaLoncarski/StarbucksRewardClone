@@ -16,3 +16,18 @@ sliderBtns.forEach((btn) => {
     });
   });
 });
+
+//Dropdown Submenu
+
+const drowDownMenuTitle = document.querySelectorAll(".menu_title");
+
+drowDownMenuTitle.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("menu_active");
+    if (item.classList.contains("menu_active")) {
+      item.nextElementSibling.style.display = "unset";
+    } else {
+      item.nextElementSibling.style.display = "none";
+    }
+  });
+});
