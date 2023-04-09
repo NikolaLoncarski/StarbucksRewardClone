@@ -5,9 +5,25 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+@media (max-width: 780px) {
+  section {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 nav {
   background-color: #f3f1e7;
   height: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+nav img {
+  margin-left: 2rem;
 }
 nav a {
   vertical-align: center;
@@ -99,7 +115,6 @@ nav a {
 @media (max-width: 780px) {
   .hero {
     flex-direction: column;
-    height: 30rem;
   }
   .getting_started .multi_thumbnail {
     flex-direction: column;

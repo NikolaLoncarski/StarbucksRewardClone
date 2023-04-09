@@ -2,6 +2,13 @@ nav {
   background-color: $light;
 
   height: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  img {
+    margin-left: 2rem;
+  }
+
   a {
     vertical-align: center;
     color: $black;
