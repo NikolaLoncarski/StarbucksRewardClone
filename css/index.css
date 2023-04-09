@@ -37,12 +37,12 @@ nav a {
   margin: 2rem auto;
 }
 .hero .image-holder {
-  height: 80%;
-  width: 60%;
-  align-items: first baseline;
+  max-width: 40%;
+  object-fit: cover;
 }
 .hero .image-holder img {
-  width: 90%;
+  height: 100%;
+  width: 100%;
 }
 .hero .basic_info {
   align-self: center;
@@ -96,6 +96,25 @@ nav a {
   margin: 0;
 }
 
+@media (max-width: 780px) {
+  .hero {
+    flex-direction: column;
+    height: 30rem;
+  }
+  .getting_started .multi_thumbnail {
+    flex-direction: column;
+  }
+  .getting_started .multi_thumbnail .tumb_container {
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .getting_started .multi_thumbnail .tumb_container h2 {
+    flex-shrink: 0;
+  }
+}
 .slider_section .slider_intro {
   height: 10rem;
   display: flex;
@@ -138,6 +157,7 @@ nav a {
   width: 15px;
 }
 .slider_section .slider {
+  position: relative;
   background-color: #d4e9e2;
   height: 250px;
 }
@@ -154,6 +174,7 @@ nav a {
   display: flex;
   flex-direction: column;
   width: 30%;
+  flex-basis: 2;
 }
 .slider_section .slider .slider_item img {
   object-fit: contain;
@@ -166,6 +187,25 @@ nav a {
   transition: all 1s;
 }
 
+@media (max-width: 780px) {
+  .slider_section {
+    height: 500px;
+    background-color: #d4e9e2;
+  }
+  .slider_section .slider_intro .slider_buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .slider .slider_item {
+    bottom: 0;
+    flex-direction: column;
+    transform: translateY(50px);
+  }
+  .slider .slider_item .slide_info {
+    width: 100% !important;
+    margin-left: 2rem auto;
+  }
+}
 .learn_more {
   display: flex;
   flex-direction: column;
@@ -211,6 +251,18 @@ nav a {
   text-decoration: none;
 }
 
+@media (max-width: 780px) {
+  .learn_more .extras {
+    width: 100%;
+  }
+  .learn_more .multi_thumbnail {
+    flex-direction: column;
+  }
+  .learn_more .multi_thumbnail .thumb_item {
+    flex-direction: row;
+    width: 100%;
+  }
+}
 .promotion {
   display: flex;
   justify-content: center;

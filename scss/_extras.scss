@@ -44,3 +44,17 @@
     }
   }
 }
+@media (max-width: 780px) {
+  .learn_more {
+    .extras {
+      width: 100%;
+    }
+    .multi_thumbnail {
+      flex-direction: column;
+      .thumb_item {
+        flex-direction: row;
+        width: 100%;
+      }
+    }
+  }
+}

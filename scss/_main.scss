@@ -8,12 +8,12 @@
   justify-content: space-around;
   margin: 2rem auto;
   .image-holder {
-    height: 80%;
-    width: 60%;
-    align-items: first baseline;
+    max-width: 40%;
 
+    object-fit: cover;
     img {
-      width: 90%;
+      height: 100%;
+      width: 100%;
     }
   }
   .basic_info {
@@ -67,6 +67,27 @@
         width: 40px;
         border-radius: 50%;
         margin: 0;
+      }
+    }
+  }
+}
+@media (max-width: 780px) {
+  .hero {
+    flex-direction: column;
+    height: 30rem;
+  }
+  .getting_started {
+    .multi_thumbnail {
+      flex-direction: column;
+      .tumb_container {
+        gap: 1rem;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        h2 {
+          flex-shrink: 0;
+        }
       }
     }
   }
