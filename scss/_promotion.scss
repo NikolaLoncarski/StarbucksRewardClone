@@ -1,0 +1,46 @@
+.promotion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: auto;
+  flex-direction: row;
+  background-color: $babyGreen;
+  height: fit-content;
+  .promo_banner {
+    max-width: 20%;
+  }
+  .promo_basic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    justify-content: center;
+
+    .promo {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      img {
+        height: 50px;
+        width: 200px;
+      }
+      button {
+        color: $babyGreen;
+        background-color: $lightGreen;
+        font-size: 0.8em;
+        height: 3rem;
+        width: fit-content;
+        font-weight: 800;
+        border: 1px solid $lightGreen;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+      button:active {
+        transform: scale(90%);
+        transition: all 20ms;
+      }
+    }
+  }
+}

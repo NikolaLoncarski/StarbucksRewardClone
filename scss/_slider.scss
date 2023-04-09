@@ -25,10 +25,10 @@
         cursor: pointer;
       }
       .slider_btn:hover {
-        border-bottom: 3px solid $darkgreen;
+        border-bottom: 3px solid $darkGreen;
       }
       .active_btn {
-        border-bottom: 3px solid $darkgreen;
+        border-bottom: 3px solid $darkGreen;
       }
       .slider_btn::after {
         content: "";

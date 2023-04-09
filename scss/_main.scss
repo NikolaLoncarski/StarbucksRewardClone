@@ -7,20 +7,24 @@
   justify-content: space-around;
   flex: 1 1 auto;
   img {
-    max-width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: contain;
+    flex-shrink: 1;
+    flex-grow: 0;
   }
   .basic_info {
-    max-width: fit-content;
+    width: fit-content;
     align-self: center;
+    margin-left: 2rem;
+    flex-shrink: 0;
     p {
       margin-top: 1em;
       margin-bottom: 0.5em;
     }
 
     button {
-      background-color: $lightgreen;
+      background-color: $lightGreen;
       width: 6rem;
       height: 2rem;
       border: none;
